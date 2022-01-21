@@ -29,7 +29,7 @@ const Header = () => {
     <header>
       <div className="navigation" role="navigation">
         <div onClick={handleRedirect("/")}>
-          <img className="logo-img" src="static/images/logo.png" alt="logo" />
+          <img className="logo-img" src="images/logo.png" alt="logo" />
         </div>
         <div className="cart-login-container">
           <nav>
@@ -57,7 +57,7 @@ const Header = () => {
           </nav>
           <button className="btn-cart" onClick={toggleCart}>
             <img
-              src="static/images/cart.svg"
+              src="images/cart.svg"
               alt="cart icon"
               className="icon"
               id="outside"
