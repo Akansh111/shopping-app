@@ -57,7 +57,7 @@ const Header = () => {
           </nav>
           <button className="btn-cart" onClick={toggleCart}>
             <img
-              src="images/cart.svg"
+              src="images/cart.png"
               alt="cart icon"
               className="icon"
               id="outside"

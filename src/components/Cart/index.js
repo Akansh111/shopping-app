@@ -31,6 +31,7 @@ const Cart = ({ closeCart }) => {
 
   const handleCheckout = useCallback(() => {
     if (isUserLoggedIn === '') {
+      onClose();
       alert.error("Please login before checking out!")
     } else {
       onClose();
