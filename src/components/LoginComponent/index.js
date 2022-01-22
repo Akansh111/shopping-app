@@ -4,9 +4,9 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import { useAlert } from "react-alert";
 import { useDispatch } from "react-redux";
+import { isUserLoggedIn } from "../../store/action";
 
 import "./LoginComponent.scss";
-import { isUserLoggedIn } from "../../store/action";
 
 const LoginComponent = () => {
   const history = useHistory();
@@ -17,7 +17,6 @@ const LoginComponent = () => {
     (values, { setSubmitting }) => {
       const registeredUser = JSON.parse(localStorage.getItem("registeredUser"));
       setTimeout(() => {
-        console.log("Logging in", values);
         setSubmitting(false);
         if (
           registeredUser.email === values.email &&

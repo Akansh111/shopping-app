@@ -28,7 +28,6 @@ const RegisterComponent = () => {
           }}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
-              console.log("Logging in", values);
               localStorage.setItem('registeredUser', JSON.stringify(values));
               alert.success("User registered Successfully! Please login");
               setSubmitting(false);

@@ -142,11 +142,17 @@ header {
   header {
     .navigation {
       width: auto;
-      nav {
-        display: none;
+      .header-links {
+        display: flex;
+      }
+      nav ul{
+        display: inline-grid;
+        li:first-child {
+          margin-bottom: 10px;
+        }
       }
       .logo-img {
-        margin: 0px;
+        margin: 22px 0px 0px 20px;
         width: 120px;
       }
     }

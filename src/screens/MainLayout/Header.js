@@ -32,6 +32,7 @@ const Header = () => {
           <img className="logo-img" src="images/logo.png" alt="logo" />
         </div>
         <div className="cart-login-container">
+          <div className="header-links">
           <nav>
             {isUserLoggedIn === '' ? (
               <ul className="list-h">
@@ -66,6 +67,7 @@ const Header = () => {
               {item} Items
             </span>
           </button>
+          </div>
           <div
             id="desktop-cart"
             className="cart-main-cont"

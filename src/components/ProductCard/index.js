@@ -6,7 +6,6 @@ import "./ProductCard.scss";
 import { updateCart } from "../../store/action";
 
 const ProductCard = ({ product }) => {
-  console.log("product", product.imageURL)
   const dispatch = useDispatch();
   const alert = useAlert();
 
@@ -26,7 +25,7 @@ const ProductCard = ({ product }) => {
       <div className="product-cta-container">
         <span className="product-price">MRP Rs. {product.price}</span>
         <button onClick={handleClick} className="btn-cta">
-          Buy Now
+          Add
         </button>
       </div>
     </li>
